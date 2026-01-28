@@ -162,9 +162,10 @@ const HomePage: React.FC<HomePageProps> = ({ site }) => {
             <div className="order-2 lg:order-1 relative">
               <div className="relative z-10 p-2 bg-gray-100 rounded-[2.5rem] shadow-xl">
                  <img 
-                  src="https://images.unsplash.com/photo-1573164060897-425ccc44635d?auto=format&fit=crop&w=800&q=80" 
+                  src="https://fastly.picsum.photos/id/2/1200/600.jpg?hmac=2ZS8RL5FkE4Kp33noyh_3QmbI9CgvQ7yIdnlBxPF0p4" 
                   alt="Sucesso Financeiro" 
                   className="rounded-[2rem] shadow-inner"
+                    style={{ height: "600px", objectFit: "cover" }}
                 />
               </div>
               <div className="absolute -top-10 -left-10 bg-white p-6 rounded-2xl shadow-2xl border border-gray-50 hidden sm:block">
