@@ -162,7 +162,7 @@ export const defaultSiteData: SiteData = {
     {
       id: '5',
       slug: 'antecipacao-recebiveis',
-      title: 'Antecipação de Recebíveis',
+      title: 'Antecipação de Recebíveis e Contratos',
       headline: 'Transforme suas vendas a prazo em dinheiro à vista.',
       shortDescription: 'Receba hoje o que venderia no cartão ou boleto nos próximos meses.',
       description: 'Ideal para lojistas e prestadores de serviço que precisam de liquidez imediata sem gerar dívidas de longo prazo.',
