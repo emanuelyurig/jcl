@@ -25,31 +25,40 @@ const QuickSignupForm: React.FC<QuickSignupFormProps> = ({ site, fixedSolution, 
   });
   const [file, setFile] = useState<File | null>(null);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('loading');
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setStatus('loading');
 
-    // Simulate API Call
-    try {
-      const data = new FormData();
-      // Added explicit type cast for 'value' to string to fix the "No overload matches this call" error on line 32.
-      Object.entries(formData).forEach(([key, value]) => data.append(key, value as string));
-      if (file) data.append('document', file);
+  try {
+    const payload = {
+      ...formData,
+      arquivo: file ? file.name : '',
+    };
 
-      // In a real project, this would be a real endpoint:
-      // await fetch('/api/leads', { method: 'POST', body: data });
-      
-      console.log('Lead submitted:', formData, file ? file.name : 'no file');
-      
-      setTimeout(() => {
-        setStatus('success');
-        setFormData({ nome: '', email: '', telefone: '', cnpj: '', valor: '', observacoes: '', solution: fixedSolution?.slug || '' });
-        setFile(null);
-      }, 1500);
-    } catch (err) {
-      setStatus('error');
-    }
-  };
+    // ⚠️ Para evitar CORS (Apps Script), usamos no-cors e Content-Type text/plain
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload),
+    });
+
+    // Como no-cors não permite ler a resposta, consideramos OK se não deu erro de rede.
+    setStatus('success');
+    setFormData({
+      nome: '',
+      email: '',
+      telefone: '',
+      cnpj: '',
+      valor: '',
+      observacoes: '',
+      solution: fixedSolution?.slug || '',
+    });
+    setFile(null);
+  } catch (err) {
+    setStatus('error');
+  }
+};
 
   if (status === 'success') {
     return (
