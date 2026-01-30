@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import { SiteData, SolutionPage } from '../types/siteData';
 import { Send, CheckCircle2, AlertCircle, Loader2, Upload } from 'lucide-react';
 
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwCTMzYKhIwfMgnmS6bjUyODLQwQF9Hm7Nt3qiQVMRNNIMyJgXjQRPuWLnn-C_k7E20fw/exec";
+
+
 interface QuickSignupFormProps {
   site: SiteData;
   fixedSolution?: SolutionPage;
