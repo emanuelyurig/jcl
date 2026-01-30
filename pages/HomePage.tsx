@@ -160,9 +160,12 @@ const HomePage: React.FC<HomePageProps> = ({ site }) => {
               <div className="relative z-10 p-2 bg-gray-100 rounded-[2.5rem] shadow-xl">
                  <img 
                   src="https://fastly.picsum.photos/id/2/1200/600.jpg?hmac=2ZS8RL5FkE4Kp33noyh_3QmbI9CgvQ7yIdnlBxPF0p4" 
-                  alt="Sucesso Financeiro" 
-                  className="rounded-[2rem] shadow-inner"
-                    style={{ height: "600px", objectFit: "cover" }}
+                  alt="Sucesso Financeir<<<<<<< HEAD
+                  src="https://fastly.picsum.photos/id/2/1200/600.jpg?hmac=2ZS8RL5FkE4Kp33noyh_3QmbI9CgvQ7yIdnlBxPF0p4" 
+=======
+                 src="https://fastly.picsum.photos/id/2/1200/600.jpg?hmac=2ZS8RL5FkE4Kp33noyh_3QmbI9CgvQ7yIdnlBxPF0p4" 
+>>>>>>> 30a2a46a0dee7b8c408125046cadfee8cfdf4943
+ver" }}
                 />
               </div>
               <div className="absolute -top-10 -left-10 bg-white p-6 rounded-2xl shadow-2xl border border-gray-50 hidden sm:block">
