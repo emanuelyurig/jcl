@@ -15,7 +15,7 @@ const HomePage: React.FC<HomePageProps> = ({ site }) => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section - Refined for better conversion */}
-      <section className="relative pt-16 pb-20 lg:pt-32 lg:pb-40 bg-white">
+      <section className="relative pt-16 pb-20 lg:pt-32 lg:pb-20 bg-white">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-50/50 -skew-x-12 translate-x-1/4 -z-10 hidden lg:block"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 text-center lg:text-left">
