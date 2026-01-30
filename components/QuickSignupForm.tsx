@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { SiteData, SolutionPage } from '../types/siteData';
 import { Send, CheckCircle2, AlertCircle, Loader2, Upload } from 'lucide-react';
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwCTMzYKhIwfMgnmS6bjUyODLQwQF9Hm7Nt3qiQVMRNNIMyJgXjQRPuWLnn-C_k7E20fw/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/library/d/1Tx54Gug7v6gybbdnXrxvVm8jn5B3j7ROLKHd2nfeVwy_qnjMWS6YpJbR/1";
 
 
 interface QuickSignupFormProps {
