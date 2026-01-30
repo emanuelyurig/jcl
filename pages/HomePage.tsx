@@ -19,10 +19,7 @@ const HomePage: React.FC<HomePageProps> = ({ site }) => {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-50/50 -skew-x-12 translate-x-1/4 -z-10 hidden lg:block"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 text-center lg:text-left">
-            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest animate-in fade-in slide-in-from-top-4 duration-500">
-              <Zap size={14} className="fill-blue-600" />
-              <span>Aprovação em até 24h</span>
-            </div>
+          
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-primary leading-[1.1] tracking-tight animate-in fade-in slide-in-from-left duration-700">
               {site.pages.home.hero.title.split(' ').map((word, i) => 
                 word.toLowerCase() === 'futuro' || word.toLowerCase() === 'financeiro' ? 
