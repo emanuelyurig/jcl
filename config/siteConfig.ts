@@ -80,25 +80,35 @@ export const defaultSiteData: SiteData = {
   },
   solutions: [
     {
-      id: '1',
-      slug: 'financiamento-de-maquinas-e-equipamentos',
-      title: 'Financiamento de máquinas e equipamentos',
-      headline: 'Dinheiro na conta sem parcelas mensais.',
-      shortDescription: 'Utilize o saldo do seu Saque-Aniversário como garantia e receba agora.',
-      description: 'A antecipação do saque-aniversário permite que você receba antecipadamente o valor que receberia anualmente. O pagamento é feito diretamente pelo saldo do seu FGTS, sem impactar seu orçamento mensal.',
-      benefits: ['Sem parcelas mensais', 'Dinheiro em até 1 hora', 'Taxas reduzidas', 'Não compromete renda'],
-      requirements: ['Ter saldo no FGTS', 'Habilitar Saque-Aniversário no App FGTS', 'Ser maior de 18 anos'],
-      howItWorks: [
-        { number: 1, title: 'Habilite o Saque', description: 'No App FGTS, ative a modalidade Saque-Aniversário.' },
-        { number: 2, title: 'Autorize o Banco', description: 'Autorize nosso banco parceiro a consultar seu saldo.' },
-        { number: 3, title: 'Receba o Valor', description: 'Finalize o cadastro e receba o dinheiro na sua conta.' }
-      ],
-      faqs: [
-        { question: 'Pode quem está negativado?', answer: 'Sim, pois o crédito utiliza o saldo do FGTS como garantia.' }
-      ],
-      ctaText: 'Antecipar meu FGTS',
-      icon: 'PiggyBank'
-    },
+  id: '1',
+  slug: 'financiamento-de-maquinas-e-equipamentos',
+  title: 'Financiamento de máquinas e equipamentos',
+  headline: 'Invista na estrutura do seu negócio sem descapitalizar.',
+  shortDescription: 'Crédito para aquisição de máquinas, equipamentos e bens produtivos novos ou usados.',
+  description: 'O financiamento de máquinas e equipamentos permite que sua empresa adquira bens essenciais para produção, modernização ou expansão, com prazos longos e taxas competitivas. Ideal para empresas que desejam crescer sem comprometer o fluxo de caixa.',
+  benefits: [
+    'Prazos longos para pagamento',
+    'Taxas reduzidas para bens produtivos',
+    'Preserva o capital de giro',
+    'Financiamento de bens novos ou usados'
+  ],
+  requirements: [
+    'CNPJ ativo',
+    'Análise de crédito da empresa',
+    'Máquina ou equipamento elegível'
+  ],
+  howItWorks: [
+    { number: 1, title: 'Escolha do Bem', description: 'Defina a máquina ou equipamento que deseja adquirir.' },
+    { number: 2, title: 'Análise', description: 'Enviamos sua proposta para instituições financeiras parceiras.' },
+    { number: 3, title: 'Liberação', description: 'Após aprovação, o pagamento é feito ao fornecedor.' }
+  ],
+  faqs: [
+    { question: 'Pode financiar equipamento usado?', answer: 'Sim, desde que esteja dentro das políticas do banco parceiro.' }
+  ],
+  ctaText: 'Solicitar financiamento',
+  icon: 'Factory'
+}
+,
     {
       id: '2',
       slug: 'financiamento-e-refinamento-de-veiculos',
@@ -179,26 +189,36 @@ export const defaultSiteData: SiteData = {
       ctaText: 'Quero antecipar vendas',
       icon: 'Banknote'
     },
-    {
-      id: '6',
-      slug: 'desconto-de-cheques-e-duplicatas',
-      title: 'Desconto de cheques e duplicatas',
-      headline: 'Facilidade para aposentados e servidores públicos.',
-      shortDescription: 'Desconto em folha com aprovação rápida e juros limitados por lei.',
-      description: 'Uma das formas mais seguras de crédito. O desconto é feito diretamente no seu benefício ou salário, garantindo as menores taxas possíveis.',
-      benefits: ['Sem consulta ao SPC/Serasa', 'Parcelas fixas', 'Prazos estendidos'],
-      requirements: ['Ser aposentado, pensionista ou servidor', 'Ter margem consignável disponível'],
-      howItWorks: [
-        { number: 1, title: 'Simulação', description: 'Consultamos sua margem disponível nos órgãos.' },
-        { number: 2, title: 'Formalização', description: 'Assinatura via link seguro/biometria.' },
-        { number: 3, title: 'Averbação', description: 'Órgão aprova e o banco paga.' }
-      ],
-      faqs: [
-        { question: 'Quem tem restrição pode fazer?', answer: 'Sim, o consignado não consulta restrições no CPF.' }
-      ],
-      ctaText: 'Consultar margem',
-      icon: 'CheckCircle'
-    }
+   {
+  id: '6',
+  slug: 'desconto-de-cheques-e-duplicatas',
+  title: 'Desconto de cheques e duplicatas',
+  headline: 'Antecipe seus recebimentos e ganhe fôlego no caixa.',
+  shortDescription: 'Transforme cheques e duplicatas a prazo em dinheiro imediato.',
+  description: 'O desconto de cheques e duplicatas é uma solução de crédito para empresas que vendem a prazo e precisam de liquidez imediata. Os títulos são antecipados junto à instituição financeira, sem gerar parcelas mensais.',
+  benefits: [
+    'Liquidez imediata',
+    'Não gera endividamento de longo prazo',
+    'Ideal para fluxo de caixa',
+    'Processo rápido e seguro'
+  ],
+  requirements: [
+    'CNPJ ativo',
+    'Cheques ou duplicatas válidas',
+    'Análise de crédito do sacado'
+  ],
+  howItWorks: [
+    { number: 1, title: 'Envio dos Títulos', description: 'Você apresenta os cheques ou duplicatas.' },
+    { number: 2, title: 'Análise', description: 'O banco avalia os títulos e o sacado.' },
+    { number: 3, title: 'Antecipação', description: 'O valor é liberado com desconto da taxa.' }
+  ],
+  faqs: [
+    { question: 'O desconto gera dívida?', answer: 'Não. Trata-se de antecipação de recebíveis, não de empréstimo.' }
+  ],
+  ctaText: 'Antecipar títulos',
+  icon: 'Receipt'
+}
+
   ],
   seo: {
     defaultTitle: 'JCL Consultoria & Negócios | Especialistas em Crédito',
