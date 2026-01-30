@@ -49,8 +49,8 @@ export const defaultSiteData: SiteData = {
         { title: 'Agilidade Digital', description: 'Processos 100% online com liberação em tempo recorde.', icon: 'Clock' }
       ],
       testimonials: [
-        { name: 'Ricardo Silva', role: 'Empresário', content: 'A JCL resolveu o capital de giro da minha empresa em 48 horas. Atendimento impecável.', avatar: 'https://picsum.photos/id/64/100/100' },
-        { name: 'Ana Oliveira', role: 'Autônoma', content: 'A antecipação do FGTS foi muito simples e rápida. Recomendo fortemente.', avatar: 'https://picsum.photos/id/65/100/100' }
+        { name: 'Bruno Alves', role: 'Lustre Instalações', content: 'A consultoria financeira superou minhas expectativas. Sua análise financeira detalhada e recomendações estratégicas nos permitiram tomar decisões informadas e maximizar nossos lucros. Não poderíamos estar mais satisfeitos com os resultados.', avatar: 'https://picsum.photos/id/64/100/100' },
+        { name: 'Lucas Souza', role: 'Plus+ Agência', content: 'Estávamos enfrentando desafios financeiros complexos, mas a consultoria financeira foi a luz no fim do túnel. Com sua abordagem personalizada e expertise, eles nos guiaram na reestruturação financeira, resultando em uma empresa mais saudável e lucrativa.', avatar: 'https://picsum.photos/id/65/100/100' }
       ],
       faqs: [
         { question: 'Quanto tempo demora a aprovação?', answer: 'Em média, nossas análises são concluídas em até 24 horas úteis após o envio da documentação.' },
@@ -81,8 +81,8 @@ export const defaultSiteData: SiteData = {
   solutions: [
     {
       id: '1',
-      slug: 'antecipacao-fgts',
-      title: 'Antecipação FGTS',
+      slug: 'financiamento-de-maquinas-e-equipamentos',
+      title: 'Financiamento de máquinas e equipamentos',
       headline: 'Dinheiro na conta sem parcelas mensais.',
       shortDescription: 'Utilize o saldo do seu Saque-Aniversário como garantia e receba agora.',
       description: 'A antecipação do saque-aniversário permite que você receba antecipadamente o valor que receberia anualmente. O pagamento é feito diretamente pelo saldo do seu FGTS, sem impactar seu orçamento mensal.',
@@ -101,8 +101,8 @@ export const defaultSiteData: SiteData = {
     },
     {
       id: '2',
-      slug: 'financiamento-veiculos',
-      title: 'Financiamento de Veículos',
+      slug: 'financiamento-e-refinamento-de-veiculos',
+      title: 'Financiamento e refinanciamento de veículo',
       headline: 'Conquiste seu carro novo com as melhores taxas.',
       shortDescription: 'Crédito rápido para veículos novos e seminovos com prazos flexíveis.',
       description: 'Financie até 100% do valor do seu veículo com taxas competitivas e prazos de até 60 meses. Atendemos carros, motos e pesados.',
@@ -181,8 +181,8 @@ export const defaultSiteData: SiteData = {
     },
     {
       id: '6',
-      slug: 'credito-consignado',
-      title: 'Crédito Consignado',
+      slug: 'desconto-de-cheques-e-duplicatas',
+      title: 'Desconto de cheques e duplicatas',
       headline: 'Facilidade para aposentados e servidores públicos.',
       shortDescription: 'Desconto em folha com aprovação rápida e juros limitados por lei.',
       description: 'Uma das formas mais seguras de crédito. O desconto é feito diretamente no seu benefício ou salário, garantindo as menores taxas possíveis.',

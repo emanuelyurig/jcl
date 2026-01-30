@@ -85,7 +85,7 @@ const HomePage: React.FC<HomePageProps> = ({ site }) => {
       </section>
 
       {/* Trusted By / Social Proof */}
-      <section className="py-12 bg-gray-50/50 border-y border-gray-100">
+      {/* <section className="py-12 bg-gray-50/50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.3em] mb-8">Trabalhamos com os melhores parceiros</p>
           <div className="flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
@@ -96,7 +96,7 @@ const HomePage: React.FC<HomePageProps> = ({ site }) => {
             <span className="text-2xl font-black tracking-tighter text-primary">SANTANDER</span>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Solutions Section - Visual Refresh */}
       <section className="py-24 bg-white" id="solucoes">
@@ -251,7 +251,7 @@ const HomePage: React.FC<HomePageProps> = ({ site }) => {
                 <div className="relative z-10 flex flex-col h-full">
                   <p className="text-gray-600 text-xl italic leading-relaxed mb-10">"{t.content}"</p>
                   <div className="mt-auto flex items-center space-x-5">
-                    <img src={t.avatar} className="w-14 h-14 rounded-2xl border-2 border-white shadow-lg object-cover" alt={t.name} />
+                    {/* <img src={t.avatar} className="w-14 h-14 rounded-2xl border-2 border-white shadow-lg object-cover" alt={t.name} /> */}
                     <div>
                       <h5 className="font-black text-primary text-lg">{t.name}</h5>
                       <p className="text-sm font-bold text-secondary">{t.role}</p>
