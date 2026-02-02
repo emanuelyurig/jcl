@@ -5,7 +5,7 @@ import { Send, CheckCircle2, AlertCircle, Loader2, Upload } from 'lucide-react';
 
 const GOOGLE_SCRIPT_URL_SANDBOX = "https://script.google.com/macros/s/AKfycbxEmRtoBNcWMQIYKyECFmhLD238gkiDV9fUzTpl9cBwcPv2VA9BBvDS-Bmj7I5t_UVk/exec";
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyP_zciVu9mRqNS2tXdzyeURoP150GXqJyuXGIOA7dJ7i6C2j2F2yymr9FTNDbVrTOO/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyP_zciVu9mRqNS2tXdzyeURoP150GXqJyuXGIOA7dJ7i6C2j2F2yymr9FTNDbVrTOO/exec"; 
 
 
 interface QuickSignupFormProps {
