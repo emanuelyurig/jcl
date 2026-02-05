@@ -22,6 +22,39 @@ interface QuickSignupFormProps {
   title?: string;
 }
 
+// Remove tudo que não for número
+const onlyNumbers = (v: string) => v.replace(/\D/g, '');
+
+// Formata telefone padrão Brasil
+const formatPhoneBR = (value: string) => {
+  const digits = onlyNumbers(value);
+
+  if (digits.length <= 10) {
+    return digits
+      .replace(/^(\d{2})(\d)/, '($1) $2')
+      .replace(/(\d{4})(\d)/, '$1-$2');
+  }
+
+  return digits
+    .replace(/^(\d{2})(\d)/, '($1) $2')
+    .replace(/(\d{5})(\d)/, '$1-$2');
+};
+
+// Formata valor em Real
+const formatCurrencyBRL = (value: string) => {
+  const digits = onlyNumbers(value);
+
+  if (!digits) return '';
+
+  const number = Number(digits) / 100;
+
+  return number.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  });
+};
+
+
 const QuickSignupForm: React.FC<QuickSignupFormProps> = ({ site, fixedSolution, title }) => {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [formData, setFormData] = useState({
@@ -141,7 +174,13 @@ await fetch(GOOGLE_SCRIPT_URL, {
               className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
               placeholder="(11) 99999-9999"
               value={formData.telefone}
-              onChange={e => setFormData({...formData, telefone: e.target.value})}
+              onChange={e =>
+  setFormData({
+    ...formData,
+    telefone: formatPhoneBR(e.target.value),
+  })
+}
+
             />
           </div>
           <div className="space-y-1">
@@ -178,7 +217,13 @@ await fetch(GOOGLE_SCRIPT_URL, {
               className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all"
               placeholder="Ex: R$ 50.000,00"
               value={formData.valor}
-              onChange={e => setFormData({...formData, valor: e.target.value})}
+              onChange={e =>
+  setFormData({
+    ...formData,
+    valor: formatCurrencyBRL(e.target.value),
+  })
+}
+
             />
           </div>
         </div>
