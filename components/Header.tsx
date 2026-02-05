@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ site }) => {
            <img
   src="/logo.png"
   alt="JCL Consultoria"
-  className="w-10 h-10 rounded-lg shadow-lg object-contain group-hover:opacity-90 transition"
+  className="w-10 h-10 rounded-lg object-contain group-hover:opacity-90 transition"
 />
 
             <div className="flex flex-col">
