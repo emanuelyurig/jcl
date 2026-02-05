@@ -3,6 +3,14 @@ import React, { useState } from 'react';
 import { SiteData, SolutionPage } from '../types/siteData';
 import { Send, CheckCircle2, AlertCircle, Loader2, Upload } from 'lucide-react';
 
+const fileToBase64 = (file: File): Promise<string> =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result as string);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+
 const GOOGLE_SCRIPT_URL_SANDBOX = "https://script.google.com/macros/s/AKfycbxEmRtoBNcWMQIYKyECFmhLD238gkiDV9fUzTpl9cBwcPv2VA9BBvDS-Bmj7I5t_UVk/exec";
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzMCrDWkHBCoJ3nmc5r2rR1UOKK1-vQvrsyI2CPKkO6AKd3Oj86ug4BYG1W_mk9_dHY9A/exec"; 
@@ -32,18 +40,31 @@ const handleSubmit = async (e: React.FormEvent) => {
   setStatus('loading');
 
   try {
-    const payload = {
-      ...formData,
-      arquivo: file ? file.name : '',
-    };
+    let arquivoBase64 = '';
+let arquivoNome = '';
+let arquivoMime = '';
 
-    // ⚠️ Para evitar CORS (Apps Script), usamos no-cors e Content-Type text/plain
-    await fetch(GOOGLE_SCRIPT_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(payload),
-    });
+if (file) {
+  arquivoBase64 = await fileToBase64(file);
+  arquivoNome = file.name;
+  arquivoMime = file.type;
+}
+
+const payload = {
+  ...formData,
+  arquivoBase64,
+  arquivoNome,
+  arquivoMime,
+};
+
+await fetch(GOOGLE_SCRIPT_URL, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'text/plain;charset=utf-8',
+  },
+  body: JSON.stringify(payload),
+});
+
 
     // Como no-cors não permite ler a resposta, consideramos OK se não deu erro de rede.
     setStatus('success');
