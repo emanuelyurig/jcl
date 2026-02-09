@@ -236,8 +236,8 @@ export const defaultSiteData: SiteData = {
   },
   media: {
     images: {
-      hero: 'https://picsum.photos/id/2/1200/600',
-      about: 'https://picsum.photos/id/180/800/600'
+      hero: '/home.jpg',
+      about: '/home.jpg'
     }
   }
 };
