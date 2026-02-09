@@ -8,16 +8,16 @@ export const defaultSiteData: SiteData = {
     companyName: 'JCL Consultoria & Negócios',
     slogan: 'Excelência e Credibilidade em Soluções Financeiras',
     contact: {
-      phone: '(11) 4004-0000',
-      whatsapp: '5511999999999',
-      email: 'contato@jclconsultoria.com.br',
+      phone: '(81) 99454-4342',
+      whatsapp: '5581994544342',
+      email: 'comercial@consultoriajcl.com.br',
       address: {
-        street: 'Av. Paulista',
-        number: '1000',
-        neighborhood: 'Bela Vista',
-        city: 'São Paulo',
-        state: 'SP',
-        zipCode: '01310-100'
+        street: 'Av. Antônio Tôrres Galvão 221 | Imbiribeira, Recife - PE',
+        number: '221',
+        neighborhood: 'Imbiribeira',
+        city: 'Recife',
+        state: 'PE',
+        zipCode: '51160-330'
       }
     },
     socialMedia: {
@@ -38,8 +38,8 @@ export const defaultSiteData: SiteData = {
     home: {
       hero: {
         title: 'Transforme seu futuro financeiro com quem entende de mercado.',
-        subtitle: 'As melhores taxas e condições para você e sua empresa. Antecipação, crédito e consultoria especializada.',
-        cta: 'Simular agora'
+        subtitle: 'as melhores soluções de crédito com taxas competitivas. Antecipação, crédito e consultoria especializada.',
+        cta: 'Soluções'
       },
       quickStepsTitle: 'Rápido e Prático',
       benefitsTitle: 'Por que escolher a JCL?',
@@ -82,7 +82,7 @@ export const defaultSiteData: SiteData = {
     {
   id: '1',
   slug: 'financiamento-de-maquinas-e-equipamentos',
-  title: 'Financiamento de máquinas e equipamentos',
+  title: 'Financiamento e refinanciamento de máquinas e equipamentos',
   headline: 'Invista na estrutura do seu negócio sem descapitalizar.',
   shortDescription: 'Crédito para aquisição de máquinas, equipamentos e bens produtivos novos ou usados.',
   description: 'O financiamento de máquinas e equipamentos permite que sua empresa adquira bens essenciais para produção, modernização ou expansão, com prazos longos e taxas competitivas. Ideal para empresas que desejam crescer sem comprometer o fluxo de caixa.',
