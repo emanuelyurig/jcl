@@ -35,7 +35,7 @@ const HomePage: React.FC<HomePageProps> = ({ site }) => {
                 {site.pages.home.hero.cta}
                 <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
-              <Link to="/solucoes" className="w-full sm:w-auto px-10 py-5 bg-white text-primary border-2 border-gray-100 rounded-2xl font-black hover:bg-gray-50 hover:border-gray-200 transition-all text-center">
+              <Link to="#solucoes" className="w-full sm:w-auto px-10 py-5 bg-white text-primary border-2 border-gray-100 rounded-2xl font-black hover:bg-gray-50 hover:border-gray-200 transition-all text-center">
                 Explorar Soluções
               </Link>
             </div>
