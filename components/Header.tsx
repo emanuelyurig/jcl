@@ -143,7 +143,7 @@ const Header: React.FC<HeaderProps> = ({ site }) => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-xl fixed inset-x-0 top-20 bottom-0 overflow-y-auto animate-in slide-in-from-right duration-300" style={{zIndex: 50}}>
+        <div className="md:hidden bg-white border-t border-gray-100 shadow-xl inset-x-0 top-20 bottom-0 overflow-y-auto animate-in slide-in-from-right duration-300" style={{zIndex: 50}}>
 
           <div className="px-4 pt-4 pb-10 space-y-1">
             <Link to="/" className={`block px-4 py-4 text-lg font-bold rounded-xl ${isActive('/') ? 'bg-blue-50 text-secondary' : 'text-gray-700'}`}>Home</Link>
